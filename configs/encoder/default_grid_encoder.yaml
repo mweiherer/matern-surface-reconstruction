@@ -1,0 +1,10 @@
+type: 'grid_encoder'
+input_dim: 4 # 3D point coordinate + 1 dimension for per-point features.
+output_dim: -1 # This is infered automatically based on num_features.
+hidden_dim: 32
+n_blocks: 5
+grid_resolution: 32
+unet:
+  f_maps: 32
+  num_levels: 3
+  num_groups: 8

@@ -1,0 +1,1 @@
+from models.weight_models.simple_weight_model import SimpleWeightModel

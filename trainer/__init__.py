@@ -1,0 +1,2 @@
+from trainer.base_trainer import BaseTrainer
+from trainer.nkf_trainer import NeuralKernelFieldTrainer
