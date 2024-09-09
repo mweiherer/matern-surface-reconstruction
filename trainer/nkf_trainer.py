@@ -1,7 +1,7 @@
 import torch
 
 from trainer import BaseTrainer
-from utils.common import condition_numbers
+from utils.common import condition_numbers, dict_mean
 from utils.eval import compute_evaluation_metrics, make_grid_points
 from utils.loss_functions import sdf_multitask_loss
 
@@ -81,7 +81,7 @@ class NeuralKernelFieldTrainer(BaseTrainer):
             batch_kernel_alpha_max.append((self.model.kernel.result['alpha']).abs().max())
 
         log_dict = {
-            'loss_dict': {f'train/{key}': value for key, value in batch_loss_dict.items()},
+            'loss_dict': {f'train/{key}': value for key, value in dict_mean(batch_loss_dict).items()},
             'train/total_loss': torch.Tensor(batch_total_loss).mean(),
             'train/cond_number': torch.Tensor(batch_cond_numbers).mean(),
             'train/kernel_alpha_max': torch.Tensor(batch_kernel_alpha_max).max()
