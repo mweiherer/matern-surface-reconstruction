@@ -26,6 +26,8 @@ conda activate learnable-matern
 ```
 This may take a while.
 
+For training, you'd also need a [wandb](https://wandb.ai/site) account. To log in to your account, simply type `wandb login` and follow the instructions.
+
 ## Training
 We only support training on [ShapeNet](https://shapenet.org) as of now.
 If you want to train a model from scratch, you first need to download the pre-processed data available [here](https://s3.eu-central-1.amazonaws.com/avg-projects/occupancy_networks/data/dataset_small_v1.1.zip), taken from [Occupancy Networks](https://github.com/autonomousvision/occupancy_networks).
