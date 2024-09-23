@@ -15,7 +15,7 @@ Abstract:
 As we show, both, from a theoretical and practical perspective, Matérn kernels have some appealing properties which make them particularly well suited for surface reconstruction---outperforming state-of-the-art methods based on the arc-cosine kernel while being significantly easier to implement, faster to compute, and scaleable.
 Being stationary, we demonstrate that the Matérn kernels' spectrum can be tuned in the same fashion as Fourier feature mappings help coordinate-based MLPs to overcome spectral bias. 
 Moreover, we theoretically analyze Matérn kernel's connection to SIREN networks as well as its relation to previously employed arc-cosine kernels. 
-Finally, based on recently introduced Neural Kernel Fields, we present data-dependent Matérn kernels and conclude that especially the Laplace kernel (being part of the Matérn family) is extremely competitive, performing almost on par with state-of-the-art methods while having a more than five times shorter training time.*
+Finally, based on recently introduced Neural Kernel Fields, we present data-dependent Matérn kernels and conclude that especially the Laplace kernel (being part of the Matérn family) is extremely competitive, performing almost on par with state-of-the-art methods in the noise-free case while having a more than five times shorter training time.*
 
 ## Setup
 We're using Python 3.9, PyTorch 2.0.1, and CUDA 11.7.
