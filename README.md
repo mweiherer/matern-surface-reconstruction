@@ -1,13 +1,13 @@
 # Matérn Kernels for Tunable Implicit Surface Reconstruction
 
-**[Paper (arXiv)]()**
+**[Paper (arXiv)](https://arxiv.org/abs/2409.15466)**
 
 [Maximilian Weiherer](https://mweiherer.github.io), [Bernhard Egger](https://eggerbernhard.ch)\
 Friedrich-Alexander-Universität Erlangen-Nürnberg
 
 Official implementation of the paper "Matérn Kernels for Tunable Implicit Surface Reconstruction".
 
-This respository essentially implements [Neural Kernel Fields (NKFs)](https://research.nvidia.com/labs/toronto-ai/nkf/) proposed by [Francis Williams](https://fwilliams.info) et al. but, as opposed to NKF, uses the family of Matérn kernels instead of the first-order arc-cosine kernel (a.k.a. Neural Splines kernel).
+This repository essentially implements [Neural Kernel Fields (NKFs)](https://research.nvidia.com/labs/toronto-ai/nkf/) proposed by [Francis Williams](https://fwilliams.info) et al. but, as opposed to NKF, uses the family of Matérn kernels instead of the first-order arc-cosine kernel (a.k.a. Neural Splines kernel).
 Please see our paper for more details and why it may be a good idea to use Matérn kernels over the arc-cosine kernel.
 
 Abstract:
@@ -38,7 +38,7 @@ To start training NKF with a Matérn kernel of smoothness $\nu=1/2$ (the Laplace
 ```
 python train.py configs/1k_no-noise_matern12_h1.yaml
 ```
-Similary, if you want to train NKF using the arc-cosine (Neural Splines) kernel, run:
+Similarly, if you want to train NKF using the arc-cosine (Neural Splines) kernel, run:
 ```
 python train.py configs/1k_no-noise_neural-spline.yaml
 ```
@@ -77,7 +77,7 @@ If you use NKF in combination with Matérn kernels or the arc-cosine kernel, ple
     title={Matérn Kernels for Tunable Implicit Surface Reconstruction},
     author={Weiherer, Maximilian and Egger, Bernhard},
     archivePrefix={arXiv},
-    eprint={},
+    eprint={2409.15466},
     year={2024}
 }
 ```
@@ -91,4 +91,4 @@ and
   year={2022}
 }
 ```
-Also, in case you have any question, feel free to contact the authors.
+Also, in case you have any questions, feel free to contact the authors.
