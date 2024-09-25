@@ -1,5 +1,7 @@
 # Matérn Kernels for Tunable Implicit Surface Reconstruction
 
+![Teaser figure](teaser.png)
+
 **[Paper (arXiv)](https://arxiv.org/abs/2409.15466)**
 
 [Maximilian Weiherer](https://mweiherer.github.io), [Bernhard Egger](https://eggerbernhard.ch)\
