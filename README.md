@@ -7,7 +7,7 @@
 [Maximilian Weiherer](https://mweiherer.github.io), [Bernhard Egger](https://eggerbernhard.ch)\
 Friedrich-Alexander-Universität Erlangen-Nürnberg
 
-Official implementation of the paper "Matérn Kernels for Tunable Implicit Surface Reconstruction".
+Official implementation of the paper "Matérn Kernels for Tunable Implicit Surface Reconstruction", ICLR'25.
 
 This repository essentially implements [Neural Kernel Fields (NKFs)](https://research.nvidia.com/labs/toronto-ai/nkf/) proposed by [Francis Williams](https://fwilliams.info) et al. but, as opposed to NKF, uses the family of Matérn kernels instead of the first-order arc-cosine kernel (a.k.a. Neural Splines kernel).
 Please see our paper for more details and why it may be a good idea to use Matérn kernels over the arc-cosine kernel.
@@ -74,13 +74,12 @@ python test.py <your-config-file>.yaml --ckpt <your-checkpoint>.pth
 I'd like to thank Francis Williams for his tireless support during re-implementation of the NKF framework.
 
 If you use NKF in combination with Matérn kernels or the arc-cosine kernel, please cite:
-```
-@misc{weiherer2024matern,
+```bibtex
+@inproceedings{weiherer2025matern,
     title={Matérn Kernels for Tunable Implicit Surface Reconstruction},
     author={Weiherer, Maximilian and Egger, Bernhard},
-    archivePrefix={arXiv},
-    eprint={2409.15466},
-    year={2024}
+    booktitle={Proceedings of the Thirteenth International Conference on Learning Representations},
+    year={2025}
 }
 ```
 and
