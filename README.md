@@ -2,7 +2,7 @@
 
 ![Teaser figure](teaser.png)
 
-**[Paper (arXiv)](https://arxiv.org/abs/2409.15466)**
+**[Paper](https://arxiv.org/abs/2409.15466)**
 
 [Maximilian Weiherer](https://mweiherer.github.io), [Bernhard Egger](https://eggerbernhard.ch)\
 Friedrich-Alexander-Universität Erlangen-Nürnberg
